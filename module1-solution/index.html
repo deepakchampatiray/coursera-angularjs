@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="decoration.css">
+  <title>AngularJS Coursera - Module 1 Assignment</title>
+</head>
+<body ng-app="LunchCheck">
+  <h1>Do you have too much food on your plate?</h1>
+  <code>Empty values will be ignored.</code>
+  <hr>
+  <section title="Food Calculator" ng-controller="LunchCheckController">
+    Please enter a comma separated list of food you have on your plate :
+    <input type="text" class="{{foodMessageClass}}" name="foodList" ng-model="foodCSV" />
+    <button type="button" name="foodCalculatorBtn" ng-click="calculateFood()">Check If Too Much</button>
+    <br>
+    Message : <span class={{foodMessageClass}}>{{foodMessage}}</span>
+  </section>
+</body>
+</html>

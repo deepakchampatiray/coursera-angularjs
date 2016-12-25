@@ -1,0 +1,16 @@
+body {
+  font-size: 1.3em;
+}
+span.red {
+  color : red;
+}
+span.green {
+  color: green;
+}
+
+input.red {
+  border: 1px solid red;
+}
+input.green {
+  border: 1px solid green;
+}
