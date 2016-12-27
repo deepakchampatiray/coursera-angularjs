@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BuiltinFilters">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>AngularJS Coursera - Builtin Filters</title>
+  <style media="screen">
+    table, td, th{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body ng-controller="BuiltinFiltersController">
+  Angular <a href="https://docs.angularjs.org/api/ng/filter">built-in filters</a>.
+  <br><br>
+  <table>
+    <tr>
+      <th>Filter Name</th>
+      <th>Unfiltered value</th>
+      <th>Filtered Value</th>
+    </tr>
+    <tr>
+      <td>Uppercase</td>
+      <td>{{name}}</td>
+      <td>{{name | uppercase}}</td>
+    </tr>
+    <tr>
+      <td>Lowercase</td>
+      <td>{{getSurname()}}</td>
+      <td>{{getSurname() | lowercase}}</td>
+    </tr>
+    <tr>
+      <td>Currency</td>
+      <td>{{salary}}</td>
+      <td>{{formattedSalary}}</td>
+    </tr>
+  </table>
+</body>
+</html>
