@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BindingExamples">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>AngularJS Coursera - One, Two and Onetime binding</title>
+</head>
+<body ng-controller="BindingController">
+  <input type="text" ng-model="firstName" />
+  <button type="button" ng-click="showFirstName()">Show First Name</button>
+  <button type="button" ng-click="setFullName()">Set Full Name</button>
+  <br>
+  <button type="button" ng-click="showNumberOfWatchers()"># Of Watchers</button>
+  <button type="button" ng-click="showFullName()">Show Full Name</button>
+  <hr>
+  One Way Binding : {{fullName}}
+  <br>
+  One Time Binding : {{::fullName}}
+</body>
+</html>
