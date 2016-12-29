@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CounterApp">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>AngularJS Coursera - Digest Cycle</title>
+</head>
+<body ng-controller="CounterController">
+  <button type="button" ng-click="showWatchers()">Show Watchers</button>
+  <button type="button" ng-click="increment()">Increment</button>
+
+  <br>
+  Counter: {{counter}} - {{counter + 1}}
+</body>
+</html>
