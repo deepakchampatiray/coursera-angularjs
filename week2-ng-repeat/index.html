@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngRepeatExample">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>AngularJS Coursera - ngRepeat</title>
+</head>
+<body ng-controller="ngRepeatController">
+  Guest List 1 : <br>
+  <ul>
+    <li ng-repeat="guest in guestList1">
+      {{guest}}
+    </li>
+  </ul>
+
+  Guest List 2: <br>
+  <ul>
+    <li ng-repeat="guest in guestList2">
+      {{$index + 1}} - {{guest.name}} <=> {{guest.email}}
+    </li>
+  </ul>
+
+  First Guest :
+  <input type="text" ng-model="guestList2[0].name">
+  Email :
+  <input type="text" ng-model="guestList2[0].email">
+</body>
+</html>
