@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ControllerAsApp">
+<head>
+  <meta charset="UTF-8">
+  <script src="angular.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <title>AngularJS Coursera - Controller-As syntax</title>
+</head>
+<body>
+  <!-- <div class="" ng-controller="ParentController">
+    <div class="" ng-controller="ChildController">
+
+    </div>
+  </div> -->
+
+  <div class="" ng-controller="ParentController2 as parent">
+    <div class="" ng-controller="ChildController2 as child">
+      Parent Value : {{parent.value}}, Child Value : {{child.value}}
+    </div>
+  </div>
+</body>
+</html>
